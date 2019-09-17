@@ -64,23 +64,26 @@ namespace ConsoleApp1
 
 
             // 반복문으로 받아서, 사용자가 0을 입력하면 종료. 종료가 될 때 까지, 입력한 모든 숫자를 더하세요.
+            int total = 0;
+
+
+
             while (true) {
-                IN:
+                
 
                 int a = int.Parse(Console.ReadLine());
                 if (a == 0)
                 {
-                    Console.WriteLine("성공");
+                    Console.WriteLine("다 더한 값 : "+total);
                     Console.ReadLine();
                     break;
 
                 }
                 else
-                    {
-                    Console.WriteLine("응 틀림");
+                    total += a;
                    
-                    goto IN; 
-                }
+                   
+                
 
                 
 
