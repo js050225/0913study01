@@ -38,32 +38,53 @@ namespace ConsoleApp1
             //Console.ReadLine();
 
             /////////////////////////////////////////////////////////--응용 Paise -------------
-            Console.WriteLine("계산기");
-            Console.Write("첫번째숫자-->");
-            int x = int.Parse(Console.ReadLine());
-            Console.WriteLine();
-            Console.Write("두번째숫자는-->");
-            int y = int.Parse(Console.ReadLine());
-            Console.WriteLine();
-            
-            Console.WriteLine("부호는(-나+ 만가능) ");
-            string z = Console.ReadLine();
-            if (z == "+")
-            {
-                Console.WriteLine("더한 결과는 :" + (x + y) + "입니다");
-            }
-            else if (z == "-")
-            {
-                Console.WriteLine("뺀 결과는:" + (x - y) + "입니다");
-            }
-            else
-            {
-                Console.WriteLine("버젼이 낮아서 안되");
-            }
-            Console.ReadLine();
+            //Console.WriteLine("계산기");
+            //Console.Write("첫번째숫자-->");
+            //int x = int.Parse(Console.ReadLine());
+            //Console.WriteLine();
+            //Console.Write("두번째숫자는-->");
+            //int y = int.Parse(Console.ReadLine());
+            //Console.WriteLine();
+
+            //Console.WriteLine("부호는(-나+ 만가능) ");
+            //string z = Console.ReadLine();
+            //if (z == "+")
+            //{
+            //    Console.WriteLine("더한 결과는 :" + (x + y) + "입니다");
+            //}
+            //else if (z == "-")
+            //{
+            //    Console.WriteLine("뺀 결과는:" + (x - y) + "입니다");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("버젼이 낮아서 안되");
+            //}
+            //Console.ReadLine();
 
 
             // 반복문으로 받아서, 사용자가 0을 입력하면 종료. 종료가 될 때 까지, 입력한 모든 숫자를 더하세요.
+            while (true) {
+                IN:
+
+                int a = int.Parse(Console.ReadLine());
+                if (a == 0)
+                {
+                    Console.WriteLine("성공");
+                    Console.ReadLine();
+                    break;
+
+                }
+                else
+                    {
+                    Console.WriteLine("응 틀림");
+                   
+                    goto IN; 
+                }
+
+                
+
+            }
         }
 
      
