@@ -63,10 +63,11 @@ namespace ConsoleApp1
             //Console.ReadLine();
 
 
+
+            //
             // 반복문으로 받아서, 사용자가 0을 입력하면 종료. 종료가 될 때 까지, 입력한 모든 숫자를 더하세요.
+            //
             int total = 0;
-
-
 
             while (true) {
                 
@@ -80,13 +81,7 @@ namespace ConsoleApp1
 
                 }
                 else
-                    total += a;
-                   
-                   
-                
-
-                
-
+                    total += a; // = total = total + a;
             }
         }
 
